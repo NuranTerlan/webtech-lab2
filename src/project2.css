@@ -1,0 +1,108 @@
+@import url("./base.css");
+
+body {
+  grid-template-rows: 5rem 1fr;
+  grid-template-columns: 16rem 1fr;
+}
+
+header {
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e1e8ed;
+  padding: 0 2rem;
+}
+
+header h1 {
+  color: #1da1f2;
+  font-size: 1.5rem;
+}
+
+header h1 a:focus,
+header h1 a:visited {
+  color: #1da1f2;
+}
+
+header h1 + a {
+  padding: 0.5rem 1rem;
+  color: #aab8c2;
+  font-size: 0.9rem;
+  transition: color 200ms;
+}
+header h1 + a:hover {
+  color: #14171a;
+}
+
+nav,
+main {
+  padding: 1rem;
+}
+
+nav {
+  border-right: 1px solid #e1e8ed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+nav ul {
+  flex: 1;
+  width: 100%;
+}
+nav a {
+  padding: 1rem;
+  color: #657786;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 200ms;
+}
+nav a.selected-proj {
+  color: #1da1f2;
+  font-weight: 800;
+  padding-left: 1.3rem;
+}
+nav a:hover {
+  background-color: #f5f8fa;
+  color: #1da1f2;
+  padding-left: 1.3rem;
+}
+nav h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #1da1f2;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+  background-color: #f5f8fa;
+  position: relative;
+}
+main .container {
+  width: 45%;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  padding-top: 4rem;
+}
+main .proj-name-section {
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  border-bottom: 1px solid #e1e8ed;
+  display: flex;
+  gap: 0.7rem;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+main .proj-name-section p {
+  color: #aab8c2;
+}
+main h2 {
+  text-align: center;
+}

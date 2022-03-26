@@ -1,2 +1,2 @@
 # webtech-lab2
-Created with CodeSandbox
+Web Technologies course / ASOIU
